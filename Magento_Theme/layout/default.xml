@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="footer">
+            <container name="custom-container" label="Main Content Top" after="-">
+                <block class="Magento\Cms\Block\Block" name="additional-links">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">additional-links</argument>
+                    </arguments>
+                </block>
+            </container>
+
+            <container name="my-ac">
+                <block class="Magento\Framework\View\Element\Template" name="custom-menu" template="Magento_Theme::custom-menu.phtml"/>
+                <block class="Magento\Framework\View\Element\Template" name="block-ac" template="Magento_Theme::custom-container.phtml"/>
+                <block class="Magento\Framework\View\Element\Template" name="back-to-top" template="Magento_Theme::back-to-top-button.phtml"/>
+            </container>
+        </referenceContainer>
+
+        <referenceBlock name="footer_links" remove="true"/>
+    </body>
+</page>

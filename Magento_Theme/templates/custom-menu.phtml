@@ -1,0 +1,27 @@
+<span class="menu-action"><span></span></span>
+<div data-mage-init='{"custom.menu": {}}' class="menu">
+    <ul class="submenu">
+        <li><a href="<?=$block->escapeUrl($block->getBaseUrl()); ?>"><span> <?= $block->escapeHtml(__('Women')) ?> </span></a>
+            <ul class="submenu">
+                <li><a href="<?=$block->escapeUrl($block->getBaseUrl()); ?>"><span><?= $block->escapeHtml(__('Tops')) ?></a></span>
+                    <ul class="submenu">
+                        <li><a href="<?=$block->escapeUrl($block->getBaseUrl()); ?>"><?= $block->escapeHtml(__('Jackets')) ?></a></li>
+                        <li><a href="<?=$block->escapeUrl($block->getBaseUrl()); ?>"><?= $block->escapeHtml(__('Tees')) ?></a></li>
+                    </ul>
+                </li>
+                <li><a href="<?=$block->escapeUrl($block->getBaseUrl()); ?>"><?= $block->escapeHtml(__('Bottoms')) ?></a></li>
+            </ul>
+        </li>
+        <li><a href="http://mag.loc/men"><span><?= $block->escapeHtml(__('Men') ?></a></span>
+            <ul class="submenu">
+                <li><a href="<?=$block->escapeUrl($block->getBaseUrl()); ?>"><?= $block->escapeHtml(__('Tops')) ?></a></li>
+                <li><a href="<?=$block->escapeUrl($block->getBaseUrl()); ?>"><?= $block->escapeHtml( __('Bottoms')) ?></a></li>
+            </ul>
+        </li>
+        <li><a href="<?=$block->escapeUrl($block->getBaseUrl()); ?>"><span><?= $block->escapeHtml(__('Training')) ?></a></span>
+            <ul class="submenu">
+                <li><a href="<?=$block->escapeUrl($block->getBaseUrl()); ?>"><?= $block->escapeHtml( __('Video Download')) ?></a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
